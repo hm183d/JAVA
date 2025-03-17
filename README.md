@@ -17,4 +17,3 @@ public class Hello : Hello라는 클래스명을 선언하겠다는 명령어
 
 블록설정 : Ctrl + Shift + 화살표키
 
-연동되나요?
