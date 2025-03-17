@@ -11,3 +11,8 @@ public class Hello : Hello라는 클래스명을 선언하겠다는 명령어
 
 ![image](https://github.com/user-attachments/assets/1eaccfc5-7ba2-48e6-84f2-92d635cb0cef)
 
+이클립스 복사키 : 블록설정 후 Ctrl+Alt+화살표
+
+단어별 이동키 : Ctrl+화살표이동
+
+블록설정 : Ctrl + Shift + 화살표키
