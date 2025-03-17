@@ -10,3 +10,4 @@ public class Hello : Hello라는 클래스명을 선언하겠다는 명령어
 /** 넣으면 클래스에 대한 설명이 들어감.
 
 ![image](https://github.com/user-attachments/assets/1eaccfc5-7ba2-48e6-84f2-92d635cb0cef)
+
