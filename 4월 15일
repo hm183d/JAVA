@@ -1,0 +1,39 @@
+1. NVL, NVL2
+2. DECODE
+3. INSTR
+4. SUBSTR
+5. CASE-WHEN-THEM
+6. SUM
+7. COUNT(상용, LIVE, 실)
+8. GROUP BY (부서별, 나이별 등등)
+
+
+```
+SELECT AVG(SAL), DEPTNO
+  FROM EMP;
+```
+
+- 단일그룹의 함수가 아닙니다.
+- SAL은 평균낸 값이라 1개, DEPTNO는 각 사원별로 가지고 있어서 14개의 데이터 있음
+- 그룹핑 된 데이터와 안된 데이터를 같이 뽑으려면 GROUP BY로 넣어줘야함.
+
+```
+SELECT ENAME, DEPTNO, AVG(SAL)
+  FROM EMP
+GROUP BY DEPTNO;
+```
+
+- ENAME도 GROUP BY에 추가 해 줘야함
+- 각각의 ENAME은 각각의 SAL을 갖는데 굳이 AVG를 찾을 필요가 없음.
+
+```
+SELECT DEPTNO, JOB, AVG(SAL)
+  FROM EMP
+GROUP BY DEPTNO, JOB
+HAVING AVG(SAL) >= 2000
+ORDER BY DEPTNO, JOB;
+```
+
+- DEPTNO(부서별), JOB(직종별) 평균 연봉
+- HAVING(WHERE처럼 조건) : 평균SALDL 2000이상인 집합만
+- ORDER BY : 부서별, JOB 별로 정렬하겠다.
